@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 80%;
+    height: 80vh;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #FFD700;
+  }
+  
+  .scroll-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .scroll-text {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    animation: scrollUp 20s linear infinite;
+    padding: 0 1rem;
+  }
+  
+  @keyframes scrollUp {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: 100%;
+    }
+  }
+  
+  .continuar-btn {
+    background-color: #FFD700;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .continuar-btn:hover {
+    background-color: #f4c300;
+  }
