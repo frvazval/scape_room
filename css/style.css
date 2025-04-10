@@ -52,8 +52,17 @@ html, body {
     padding: 0 1rem;
   }
 
+  @keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+
   .scroll-text p {
     text-shadow: 0 0 5px #33ff33;
+    animation: flicker 1.5s infinite;
+    font-size: 1.5rem; /* Puedes ajustar el tamaño aquí */
+    line-height: 1.6;
   }
   
   @keyframes scrollUp {
