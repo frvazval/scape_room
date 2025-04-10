@@ -1,3 +1,36 @@
+Tengo un archivo HTML, con este contenido:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego Scape Room</title>
+  <link rel="stylesheet" href="css/style.css" />  
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>JUEGO SCAPE ROOM</h1>
+    <div class="scroll-container">
+      <div class="scroll-text">
+        <p>
+          Bienvenido a la simulación de escape más desafiante jamás creada. Has ingresado a un sistema virtual diseñado para poner a prueba tu lógica, observación y capacidad de resolución bajo presión.
+        </p>
+        <p>
+          Nada es lo que parece. Cada rincón de este entorno digital encierra un secreto, y cada pista puede ser la clave para seguir avanzando... o un simple señuelo. La cuenta regresiva ha comenzado. Los archivos están corruptos, las conexiones inestables y el tiempo en tu contra. Tu misión es restaurar el núcleo del sistema y salir antes de que todo se colapse. Examina códigos, resuelve acertijos y desbloquea los niveles ocultos. 
+          Colabora, piensa diferente y no te fíes de lo evidente. La interfaz está programada para confundirte, pero tú tienes lo que se necesita. Este no es solo un juego, es una carrera contra el olvido. ¿Estás listo para enfrentarte a lo desconocido y reescribir tu destino digital? La terminal está activa. El sistema te observa. Que comience el desafío.
+        </p>
+      </div>
+    </div>
+    <a href="personajes.html">
+      <button class="continuar-btn">Continuar</button>
+    </a>
+  </div>
+</body>
+</html>
+
+y un archivo css, con este contenido:
 
 html, body {
     margin: 0;
@@ -86,22 +119,19 @@ html, body {
   }
   
   .continuar-btn {
-    background-color: black;
-    color: #33ff33; /* Verde fosforescente estilo retro */
+    background-color: #FFD700;
+    color: black;
     font-size: 1.2rem;
-    font-family: 'VT323', monospace; /* Fuente retro */
-    padding: 10px 20px;
-    border: 2px solid #33ff33; /* Borde verde brillante */
-    border-radius: 5px; /* Bordes menos redondeados */
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    text-transform: uppercase; /* Texto en mayúsculas */
-    box-shadow: 0px 0px 8px #33ff33, inset 0px 0px 4px #33ff33; /* Brillo retro */
-    transition: transform 0.2s;
+    transition: background-color 0.3s;
+    margin-top: 20px;
   }
   
   .continuar-btn:hover {
-    transform: scale(1.1); /* Agranda el botón al pasar el mouse */
-    box-shadow: 0px 0px 12px #33ff33, inset 0px 0px 6px #33ff33; /* Más brillo al pasar el mouse */
+    background-color: #f4c300;
   }  
 
   .container::before {
