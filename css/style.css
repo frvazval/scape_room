@@ -46,16 +46,18 @@ html, body {
     position: relative;
     overflow: hidden;
     height: 100%;
-    width: 100%;
-    
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;    
   }
   
   .scroll-text {
     position: absolute;
     bottom: -100%;
     width: 100%;
+    box-sizing: border-box;
     animation: scrollUp 20s linear infinite;
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   @keyframes flicker {
