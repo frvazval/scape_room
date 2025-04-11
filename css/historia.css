@@ -120,7 +120,7 @@ html, body {
     );
     pointer-events: none;
     z-index: 1;
-    animation: screenFlicker 0.3s infinite;
+    animation: screenFlicker 0.3s infinite;    
   }
   
   
